@@ -9,13 +9,13 @@
 		<header><h1>Html5 form.</h1></header>
 			<h2>Profile form example.</h2>
 			<form>
-				<p>Enter your primary email. <input type="email" value="youremail@provider.com" /></p>
+				<p>Enter your primary email. <input type="email" value="youremail@provider.com" required="required" /></p>
 				<p>Have a website post your Url here. <input type="url" /></p>
 				<p>Contact phone number. (optional) <input type="tel" /></p>
 				<p>Search. <input type="search" /></p>
 				<p>Choose one. <input type="color" name="color_choice" /></p>
-				<p>Your Age. <input type="range" /></p>
-				<p>Number of children. <input type="number" /></p>
+				<p>Your Age. <input type="range" min="18" max="30" autofocus="autofocus" /></p>
+				<p>Number of children. <input type="number" placeholder="Enter a number"/></p>
 				<p>date <input type="date" /></p>
 				<p>time <input type="time" /></p>
 				<p>Friends <input type="text" list="your_friends" /></p>
@@ -24,7 +24,7 @@
 						<option label="Few" value="3">
 						<option label="None" value="Mom">
 					</datalist>
-				<Progress value="70" max="100" />70%</progress>
+				<Progress value="70" max="100" > 70%</progress>
 			</form>
 			<footer><p>&copy;DarkstarForces.LLC&trade;</p>
 			</footer> <!-- copyright -->
