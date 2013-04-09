@@ -1,0 +1,325 @@
+/*----- Document -----*/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+body{
+	font: .8125em/1 verdana, arial, sans-serif;
+	background: url('../img/bg_gradient.png') 0 0 repeat-x;
+	color: #424242;
+}
+
+/*----- Element Styles -----*/
+h1{
+	float: right;
+	font-size: 1.7em;
+	text-align: right;
+}
+h1 a{
+	color: #fff;
+}
+h2{
+	margin: 0 0 20px 0;
+	color: #000;
+}
+h4{
+	margin: 0 0 30px 0;
+	padding: 0 2px 0 0;
+	font-weight: normal;
+	font-size: .95em;
+	text-align: right;
+}
+p{
+	font-size: .9em;
+	line-height: 1.3;
+}
+dl dt{
+	font-size: 1.1em;
+	margin: 0 0 5px 0;
+}
+dl dd{
+	margin: 0 0 15px 0;
+}
+
+a{
+	color: #6aa9cc;
+	text-decoration: none;
+}
+a:hover{
+	color: #8ccaee;
+}
+
+section ul {
+	margin: 13px 0 0 250px;
+}
+
+section li {
+	margin: 10px 0;
+	font-size: 1.25em;
+/* 	text-align: center; */
+	list-style-type: none;
+}
+
+/*----- Header -----*/
+header{
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 30px 0 15px 0;
+	background: #000 url('../img/bg_header.png') 0 0 repeat-x;
+	border-bottom: 1px solid #ccc;
+}
+#header_wrap{
+	overflow: hidden;
+	width: 960px;
+	margin: auto;
+}
+
+/*----- Navigation -----*/
+nav{
+	overflow: hidden;
+	float: left;
+	padding: 2px 0;
+}
+nav li{
+	float: left;
+	margin: 0 20px 0 0;
+	font-size: 1.4em;
+	list-style: none;
+}
+nav li a#active{
+	color: #fff;
+}
+
+/*----- Aside -----*/
+aside {
+	float: right;
+	width: 200px;
+/* 	margin: 0 0 20px 0; */
+	text-align: right;
+}
+aside div {
+	margin: 0 0 20px 0;
+}
+aside form input[type="search"]{
+	width: 100px;
+	height: 13px;
+	padding: 3px 20px;
+	background: url('../img/bg_search.png') center no-repeat;
+	border: none;
+}
+aside form input[type="submit"]{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background: url('../img/icon_spotlight.png') center no-repeat;
+	text-indent: -20000px;
+	cursor: pointer;
+	border: none;
+}
+aside a{
+	display: inline-block;
+	border: 1px solid #000;
+}
+
+aside form label {
+	display: block;
+	margin: 0;
+	width: 0;
+	text-indent: -20000px;
+	text-align: left; /* needed for text indent? */
+}
+
+/*----- Content -----*/
+#wrapper{
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+}
+section {
+	float: left;
+	width: 720px;
+	margin: 0 0 20px 0;
+	text-align: justify;
+}
+
+article {
+	margin: 16px 0 0 0;
+}
+
+article h1 {
+	float: none;
+	text-align: left;
+	font-size: 1.25em;
+/* 	color: #0070B7; */
+	margin: 14px 0;
+}
+
+/*----- Quotes -----*/
+blockquote{
+	margin: 0 0 2px 0;
+	padding: 0 1px 6px 1px;
+	background: url('../img/bg_quote.png') center bottom no-repeat;
+}
+blockquote p{
+	padding: 15px 15px 9px 15px;
+	background: #f4ee7e;
+	border-right: 1px solid #dadada;
+	border-left: 1px solid #dadada;
+	font: italic 1.15em/1.5 marker, fantasy;
+	letter-spacing: .125em;
+}
+
+/*----- Table -----*/
+table{
+	width: 720px;
+	border-collapse: collapse;
+}
+table caption{
+	padding: 20px 0 10px 0;
+/* 	font-weight: bold; */
+/* 	font-size: 1.1em; */
+	text-align: left;
+	caption-side: bottom;
+/* 	color: #0070B7; */
+}
+table tr th{
+	padding: 5px;
+	background: #ACCFE5;
+	border: 1px solid #ddd;
+	font-size: .9em;
+	text-align: left;
+}
+table tr.odd{
+	background: #fff;
+}
+table tr.even{
+	background: #eee;
+}
+table tr td{
+	padding: 5px;
+	border: 1px solid #ddd;
+	font-size: .9em;
+}
+
+/*----- Contact Form -----*/
+section form div {
+	margin-left: 16px;
+}
+
+section form label {
+	display: block;
+	margin-right: 20px;
+	float: left;
+	text-align: right;
+	width: 80px;
+}
+
+section form input, section form select, section form textarea{
+	width: 554px;
+	padding: 2px;
+	margin-bottom: 20px;
+	background: #fefefe;
+	border-left: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	font-family: Verdana, sans-serif;
+	font-size: .9em;
+}
+section form input:focus, section form select:focus, section form textarea:focus{
+	background: #ffd;
+}
+section form select{
+	width: 160px;
+}
+section form select option{
+	padding: 0 6px 0 4px;
+}
+
+section form #agreement {
+	width: 16px;
+}
+
+/*
+form p input[type="submit"]{
+	margin: 0 5px 0 0;
+	padding: 2px 3px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	font-size: .9em;
+	color: #333;
+}
+form p input[type="submit"]:active{
+	background: #eee;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+*/
+/*
+section form p{
+	margin: 0 0 15px 0;
+}
+*/
+
+/* form button */
+section form div input[type="submit"] {
+	margin: 20px 0 0 99px; 
+	width: 100px; 
+	/*   float: right; */
+	background: #6eb4f2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6eb4f2 0%, #54a4ee 50%, #3690f0 51%, #1e68de 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6eb4f2), color-stop(50%,#54a4ee), color-stop(51%,#3690f0), color-stop(100%,#1e68de)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6eb4f2 0%,#54a4ee 50%,#3690f0 51%,#1e68de 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6eb4f2 0%,#54a4ee 50%,#3690f0 51%,#1e68de 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6eb4f2 0%,#54a4ee 50%,#3690f0 51%,#1e68de 100%); /* IE10+ */
+	background: linear-gradient(top,  #6eb4f2 0%,#54a4ee 50%,#3690f0 51%,#1e68de 100%); /* W3C */
+	border: 1px solid #6eb4f2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+	-moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+	color: #fff;
+	font: 20px "helvetica neue", helvetica, arial, sans-serif;
+	line-height: 1;
+	padding: 12px 0 14px 0;
+	text-align: center;
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+	cursor: pointer; 
+}
+
+/* form button:hover */
+section form div input[type="submit"]:hover {
+	background: #96c9f6; /* Old browsers */
+	background: -moz-linear-gradient(top,  #96c9f6 0%, #83bdf3 50%, #6eaff4 51%, #5b91e9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96c9f6), color-stop(50%,#83bdf3), color-stop(51%,#6eaff4), color-stop(100%,#5b91e9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #96c9f6 0%,#83bdf3 50%,#6eaff4 51%,#5b91e9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #96c9f6 0%,#83bdf3 50%,#6eaff4 51%,#5b91e9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #96c9f6 0%,#83bdf3 50%,#6eaff4 51%,#5b91e9 100%); /* IE10+ */
+	background: linear-gradient(top,  #96c9f6 0%,#83bdf3 50%,#6eaff4 51%,#5b91e9 100%); /* W3C */
+	cursor: pointer; 
+}
+
+/*----- Footer -----*/
+footer{
+	clear: both;
+	padding-bottom: 10px;
+	font-size: .9em;
+	text-align: center;
+/* 	background: #000 url('../img/bg_header.png') 0 0 repeat-x; */
+	border-bottom: 4px solid #ccc;
+/* 	height: 60px; */
+}
+footer small {
+/* 	padding: 10px; */
+}
+
